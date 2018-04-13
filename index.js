@@ -68,23 +68,29 @@ function letterGuess() {
                 }
 
                 //series of gameplay messages
-                console.log("You have " + lives + " lives left");
 
-                console.log("Letters Guessed: " + attempts);
-
-                console.log("");
+                console.log
+                (`
+                You have ${lives} lives left
+                Letters Guessed: ${attempts}
+                `);
+          
                 if (lives === 0) {
-                    console.log("e kala mai iaʻu! You Lose!");
-
-                    console.log("The word was " + currentWord + "!");
+                    console.log
+                    (`
+                    e kala mai iaʻu! You Lose!
+                    The word was ${currentWord}
+                    `)
+                    
 
                     newRound();
                 }
 
                 else if (emptyWord.indexOf("_") === -1) {
-                    console.log("Mau hoohiwahiwa! You win!");
 
-                    console.log("The word was " + currentWord + "!");
+                   
+                
+                    console.log("Mau hoohiwahiwa! You win!");
 
                     newRound();
                 }
